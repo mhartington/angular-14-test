@@ -1,0 +1,21 @@
+<label>
+  <input
+    placeholder="Artists, Songs, Lyrics, and More"
+    [formControl]="searchInput"
+    type="search" />
+</label>
+<div text-center padding *ngIf="state.isLoading">
+  Loading...
+</div>
+<div *ngIf="state.isError">
+  <error-emoji></error-emoji>
+<ul>
+  <ul *ngIf="state.albums">
+    <h2>Albums</h2>
+    <song-item *ngFor="let album of state.albums" [song]="album" routerLink="/album/{{album.id}}"></song-item>
+  </ul>
+  <ul *ngIf="state.playlists">
+    <h2>Playlists</h2>
+    <song-item *ngFor="let playlist of state.playlists" [song]="playlist" routerLink="/playlist/{{playlist.id}}"></song-item>
+  </ul>
+</ul>

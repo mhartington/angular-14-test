@@ -1,6 +1,6 @@
 import { environment } from '../../../environments/environment';
 import { Injectable } from '@angular/core';
-import { from, fromEvent } from 'rxjs';
+import { from } from 'rxjs';
 declare var MusicKit: any;
 @Injectable({
   providedIn: 'root'

@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  musicKitToken: 'eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlAyNFpTRjRXQjIifQ.eyJpYXQiOjE2NDg4MTgxNDEsImV4cCI6MTY2NDM3MDE0MSwiaXNzIjoiOVlOMkhVNTlLOCJ9.1pvuXCk0E4_mjh-HcA7i1IaulyLFZqwQ8V9c_RK_cNrvwFhWdLXretLsue4H8kv8l9hLlVu1HQogU9JroJHVxA',
+  musicKitToken: '',
 };
